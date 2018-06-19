@@ -25,7 +25,8 @@
               <img src="assets/img/lion1920.jpg" alt="Lion Original size">
             </div>
             <div class="subbox">
-              <h2>Resolution switching 1: pixel width</h2>
+              <h2>Resolution switching 1: Different sizes</h2>
+              <p>We can however use two new attributes  — <code>srcset</code> and <code>sizes</code> — to provide several additional source images along with hints to help the browser pick the right one. </p>
               <img srcset="assets/img/lion320.jpg 320w,
                            assets/img/lion480.jpg 480w,
                            assets/img/lion800.jpg 800w,
@@ -38,7 +39,9 @@
               src="assets/img/lion1920.jpg" alt="Lion Original size">
             </div>
             <div class="subbox">
-              <h2>Resolution switching 2: devicePixelRatio</h2>
+              <h2>Resolution switching 2:Same size, different resolutions (devicePixelRatio)</h2>
+              <p>You can allow the browser to choose an appropriate resolution
+                image by using <code>srcset</code> with x-descriptors and without <code>sizes</code>— a somewhat easier syntax! </p>
               <img id="img2" srcset="assets/img/lion320.jpg,
                            assets/img/lion480.jpg 3x,
                            assets/img/lion1920.jpg 4x"
@@ -47,7 +50,7 @@
             </div>
           </div>
           <div class="solution-2 box">
-            <h1>Art Direct:</h1>
+            <h1>Art direction</h1>
 
           </div>
         </main>
