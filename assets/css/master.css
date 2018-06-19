@@ -22,9 +22,10 @@ main{
   border: 2px solid #fff;
   border-radius: 10px;
   transition: .7s;
+  
 }
 .subbox img:hover{
-  box-shadow: 0 0 5px 3px #D1DBBD;
+  box-shadow: 0 0 5px 3px #fff;
 }
 #img2	{
   width: 320px;
