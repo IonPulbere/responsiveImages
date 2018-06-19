@@ -7,8 +7,6 @@ main{
   max-width: 85rem;
   width: 80%;
   margin:2em auto;
-
-
 }
 .box{
   border: 5px solid ;
@@ -27,5 +25,7 @@ main{
 }
 .subbox img:hover{
   box-shadow: 0 0 5px 3px #D1DBBD;
-
+}
+#img2	{
+  width: 320px;
 }
