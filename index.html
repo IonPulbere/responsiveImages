@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--created by: Ion Pulbere
+    date: 14.06.2018
+    porpose: to test Form input types
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/normalizer.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <title>Testing Forms</title>
+  </head>
+  <body>
+        <header>
+          <nav>
+
+          </nav>
+        </header>
+        <main>
+          <!-- <div class="tt">
+
+          </div> -->
+          <p>My form</p>
+          <form id="firstForm" class="mainform" action="index.html" method="post" novalidate name="formName">
+            <div class="field">
+              <label for="color">Color:   </label>
+              <input id="colorID" type="color" name="color" value="#ff0000">
+            </div>
+            <div class="field">
+              <label for="date">Date: </label>
+              <input id="date" type="date" name="date" value="" required min="2017-04-01" max="2017-04-21" >
+            </div>
+            <div class="field">
+              <label for="datetime">Date Time: </label>
+              <input id="datetime" type="datetime" name="datetime" value="">
+            </div>
+            <div class="field">
+              <label for="email">Email: </label>
+              <input id="email" type="email" name="email" value="">
+            </div>
+            <div class="field">
+              <label for="month">Month: </label>
+              <input id="month" type="month" name="month" value="">
+            </div>
+            <div class="field">
+              <label for="number">Number: </label>
+              <input id="number" type="number" name="number" value="">
+            </div>
+            <div class="field">
+              <label for="range">Range: </label>
+              <input id="range" list="forRange" type="range" name="range" value="">
+              <datalist id="forRange">
+                  <option value="0" lebel="0%"></option>
+                  <option value="10" lebel="10%"></option>
+                  <option value="20" lebel="20%"></option>
+                  <option value="30" lebel="30%"></option>
+                  <option value="40" lebel="40%"></option>
+                  <option value="50" lebel="50%"></option>
+                  <option value="60" lebel="60%"></option>
+                  <option value="70" lebel="70%"></option>
+                  <option value="80" lebel="80%"></option>
+                  <option value="90" lebel="90%"></option>
+                  <option value="100" lebel="100%"></option>
+              </datalist>
+              <p id="range-value"></p>
+            </div>
+            <div class="field">
+              <label for="search" >Search: </label>
+              <input id="search" type="search" name="search" value="" placeholder="Search" >
+            </div>
+            <div class="field">
+              <label for="tel">Tel: </label>
+              <input id="tel" type="tel" name="tel" value="">
+            </div>
+            <div class="field">
+              <label for="time">Time: </label>
+              <input id="time" type="time" name="time" value="">
+            </div>
+            <div class="field">
+              <label for="url">URL: </label>
+              <input id="url" type="url" name="url" value="">
+            </div>
+            <div class="field">
+              <label for="week">Week: </label>
+              <input id="week" type="week" name="week" value="">
+            </div>
+            <!-- input list -->
+            <div class="field">
+              <label for="inpContinent">Input List</label>
+              <input list="continents" name="continent" id="inpContinent">
+              <datalist id="continents">
+                  <option value="North America"></option>
+                  <option value="South America"></option>
+                  <option value="Europe"></option>
+                  <option value="Asia"></option>
+                  <option value="Africa"></option>
+                  <option value="Australia"></option>
+                  <option value="Antarctica"></option>
+              </datalist>
+
+            </div>
+            <div class="field">
+              <input type="submit" name="submit" value="Click Me">
+            </div>
+          </form>
+          <!-- form list -->
+      <div class="todo">
+         <div class="todo__head">
+           <h1>To Do:</h1>
+           <form class="todo__add">
+             <input class="todo__input" placeholder="Write a to-do..." name="todo" required="" type="text">
+             <button type="submit" value="add">
+               <img src="assets/img/plus.svg" alt="plus"> Add
+             </button>
+           </form>
+         </div>
+         <ul class="todo__list">
+             <li class="todo__item">
+               <label for="todo0">
+                 <div class="todo__text">Learn CSS Grid</div>
+               </label>
+             </li>
+             <li class="todo__item">
+               <label for="todo1">
+                 <div class="todo__text">Feed the cat</div>
+               </label>
+             </li>
+             <li class="todo__item">
+               <label for="todo2">
+                 <div class="todo__text">Learn how to use Firefox Debugger</div>
+               </label>
+             </li>
+           </ul>
+       </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="assets/js/range.js">  </script>
+        <script src="assets/js/app.js">  </script>
+        <script src="assets/js/validation.js"></script>
+
+  </body>
+</html>

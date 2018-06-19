@@ -1,0 +1,239 @@
+html{
+background-color: #7F6560;
+color: #fff;
+}
+.wrapper{
+  max-width: 80rem;
+  width: 80%;
+  margin: 1em auto ;
+  text-align: center;
+}
+/*  form format*/
+.mainform{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.field{
+  display: flex;
+    padding-top:10px;
+    position: relative;
+}
+.field label{
+  display: block;
+  width: 30%;
+}
+.field input{
+  display:block;
+  width: 60%;
+}
+
+p{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.field input[type='submit']{
+  width: 100%;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+#range-value{
+  font-size: 1em;
+  margin: 0;
+  position: absolute;
+  right: 0;
+
+}
+
+/*  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++to DO*/
+.todo {
+  background-color: white;
+  border-radius: 6px;
+  width: 95%;
+  color: #000;
+  max-height: 90vh;
+  margin: 50px auto;
+  overflow-y: scroll;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media (min-width: 800px) {
+  .todo {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .todo {
+    width: 50%;
+
+  }
+}
+
+.todo__head {
+  background-color: #ECECEC;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 40px 30px 30px;
+}
+
+.todo__head h1 {
+  margin: 0 0 30px;
+  font-size: 26px;
+}
+
+.todo__add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.todo__add [type='text'] {
+  flex: 0 0 78%;
+  padding: 10px;
+  border: 1px solid #d2d2d2;
+  margin-bottom: 0px;
+  font-size: 16px;
+  height: 36px;
+}
+
+.todo__add button {
+  flex: 0 0 20%;
+  background-color: transparent;
+  border: 2px solid #1752D7;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 36px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1752D7;
+}
+
+.todo__add button img {
+  position: relative;
+  top: 1px;
+}
+
+.todo__list {
+  padding: 0 30px 30px;
+}
+
+.todo__item {
+  list-style: none;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 15px 0;
+}
+.todo__item label {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.todo__item input {
+  display: none;
+}
+
+.todo__buttons {
+  min-width: 105px;
+}
+
+.todo__text {
+  line-height: 24px;
+  transition: all .3s ease-in;
+}
+
+.todo__delete {
+  color: #DB6863;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 24px;
+  transition: color .2s ease;
+}
+.todo__delete:hover {
+  color: #E2251D;
+}
+
+.todo__done {
+  cursor: pointer;
+  margin-right: 15px;
+  opacity: .2;
+  transition: opacity .2s ease;
+}
+
+.todo__list .todo__item input[type="checkbox"]:checked+label .todo__text {
+  text-decoration: line-through;
+  color: #c0c0c0;
+}
+
+.todo__list .todo__item input[type="checkbox"]:checked+label .todo__done {
+  opacity: 1;
+}
+body {
+  /* background-color: #306ffd; */
+  /* background-image: linear-gradient(60deg, #306efe, #003ab7); */
+  padding: 40px 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#date{
+  color: green;
+}
+.tt{
+  margin: 2em auto;
+  width: 300px;
+  height:  300px;
+  background-color: #fff;
+  /* background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg'); */
+  background-image: url('../img/search-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 3px solid;
+}
+#search{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url('../img/search-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 0 0 25px;
+}
+/* class for validation */
+.validate-me{
+  color: yellow;
+  position: absolute;
+  z-index: 100;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #000;
+  padding:10px;
+  padding-left: 30px;
+  border-radius: 5px;
+  right: 2.9em;
+  top:1.2em;
+  /*  add abackgroud sign*/
+  background-image: url('../img/alert-icon.png');
+  background-size: 10%;
+  background-position: 5px 10px;
+  background-repeat: no-repeat;
+  -webkit-animation:forvalidate 2s;
+  animation: forvalidate 2s  forwards;
+  }
+@keyframes forvalidate {
+      0% {visibility: visible;}
+      100%{visibility: hidden;color:rgb(128,0,0);
+        background-color: yellow;
+      }
+}
