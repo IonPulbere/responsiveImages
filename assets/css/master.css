@@ -1,0 +1,30 @@
+html {
+  /* background: linear-gradient(#FCFFF5,#91AA9D,#193441) no-repeat; */
+  background-color: #193441;
+  color: #fff;
+}
+main{
+  max-width: 85rem;
+  width: 80%;
+  margin:2em auto;
+
+
+}
+.box{
+  border: 5px solid ;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px #D1DBBD;
+  padding: 2%;
+  margin-bottom: 1%;
+}
+.box h1{
+  text-align: center;
+}
+.subbox img{
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.subbox img:hover{
+  box-shadow: 0 0 5px 3px #D1DBBD;
+
+}

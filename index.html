@@ -18,7 +18,27 @@
           </nav>
         </header>
         <main>
-          <h1>test</h1>
+          <div class="solution-1 box">
+            <h1>Resolution switching: Different sizes</h1>
+            <div class="subbox">
+              <h2>Original Size:</h2>
+              <img src="assets/img/lion1920.jpg" alt="Lion Original size">
+            </div>
+            <div class="subbox">
+              <h2>Resolution switching:</h2>
+              <img srcset="assets/img/lion320.jpg 320w,
+                           assets/img/lion480.jpg 480w,
+                           assets/img/lion1920.jpg 1920w"
+                  sizes="(max-width: 320px) 280px,
+                          (max-width: 480px) 440px,
+                          1920px"
+              src="assets/img/lion1920.jpg" alt="Lion Original size">
+            </div>
+          </div>
+          <div class="solution-2 box">
+            <h1>Art Direct:</h1>
+
+          </div>
         </main>
         <footer>
         </footer>
