@@ -23,6 +23,7 @@ main{
 .subbox img{
   border: 2px solid #fff;
   border-radius: 10px;
+  transition: .5s;
 }
 .subbox img:hover{
   box-shadow: 0 0 5px 3px #D1DBBD;
